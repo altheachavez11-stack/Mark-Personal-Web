@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Mark Web Page</title>
+<link rel="stylesheet" href="personal.css">
+</head>
+
+<body>
+
+<header>
+<div class="profile">
+<img src="myPic.jpg" alt="Mark's Profile Picture" class="profile-pic">
+</div>
+<h1>Welcome to Mark Personal Page</h1>
+<p>Explore a little about me, my hobbies, and the websites I enjoy.</p>
+<button id="videoBtn">Watch This Video</button>
+</header>
+
+<section class="about">
+<h2>About Me</h2>
+<p>
+Hello! I am a mark who enjoys learning about applications and systems.
+I like exploring new websites, watching videos online, and improving my skills
+in programming and design.
+</p>
+</section>
+
+<section class="hobbies">
+<h2>My Hobbies</h2>
+
+<div class="hobby-grid">
+
+<div class="card">
+<h3>Gaming</h3>
+<p>I enjoy playing online games and exploring new game worlds.</p>
+</div>
+
+<div class="card">
+<h3>Watching Cartoons</h3>
+<p>I like watching animated shows and classic cartoons.</p>
+</div>
+
+<div class="card">
+<h3>Learning Programming</h3>
+<p>I spend time learning about systems and creating simple applications.</p>
+</div>
+
+</div>
+</section>
+
+<section class="websites">
+<h2>Favorite Websites</h2>
+
+<ul>
+<li><a href="https://hdtoday.tv" target="_blank">HDToday</a></li>
+<li><a href="https://www.codashop.com" target="_blank">Codashop</a></li>
+<li><a href="https://www.cartoonnetwork.com" target="_blank">Cartoon Network</a></li>
+</ul>
+
+</section>
+
+<!-- Modal -->
+<div id="videoModal" class="modal">
+<div class="modal-content">
+
+<span class="close">&times;</span>
+
+<h3>Featured Video</h3>
+
+<video id="myVideo" controls>
+<source src="MyBtn.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+</div>
+</div>
+
+<script src="personal.js"></script>
+
+</body>
+</html>
