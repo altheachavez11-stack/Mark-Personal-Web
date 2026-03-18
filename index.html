@@ -11,18 +11,19 @@
 
 <header>
 <div class="profile">
-<img src="myPic.jpg" alt="Mark's Profile Picture" class="profile-pic">
+<img id="profilePic" src="myPic.jpg" alt="Mark's Profile Picture" class="profile-pic">
 </div>
 <h1>Welcome to Mark Personal Page</h1>
 <p>Explore a little about me, my hobbies, and the websites I enjoy.</p>
 <button id="videoBtn">Watch This Video</button>
+<button id="psdBtn" class="projects-btn">Photoshop Projects</button>
 </header>
 
 <section class="about">
 <h2>About Me</h2>
 <p>
 Hello! I am a mark who enjoys learning about applications and systems.
-I like exploring new websites, watching videos online, and improving my skills
+I like watching videos online, and improving my skills
 in programming and design.
 </p>
 </section>
@@ -44,7 +45,7 @@ in programming and design.
 
 <div class="card">
 <h3>Learning Programming</h3>
-<p>I spend time learning about systems and creating simple applications.</p>
+<p>Im still learning about systems and creating simple applications.</p>
 </div>
 
 </div>
@@ -75,6 +76,98 @@ Your browser does not support the video tag.
 </video>
 
 </div>
+</div>
+
+<!-- PSD Modal -->
+<div id="psdModal" class="modal">
+  <div class="modal-content large-modal">
+    <span class="close psd-close">&times;</span>
+    <h3>My Photoshop Projects</h3>
+    <p>Here are previews of my work. Click "Download" to get the file.</p>
+    
+    <div class="psd-gallery">
+      <!-- Item 1 -->
+      <div class="gallery-item">
+        <img src="projectsPSD/Carceler&Gabo.png" alt="Carceler & Gabo" onerror="handleImageError(this)">
+        <div class="item-info">
+           <span>Brochure</span>
+           <a href="projectsPSD/Carceler&Gabo.psd" download class="download-btn">Download file</a>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="gallery-item">
+        <img src="projectsPSD/carceler&Hamad LAB 1.png" alt="Carceler Lab 1" onerror="handleImageError(this)">
+        <div class="item-info">
+           <span>Carceler Creative</span>
+           <a href="projectsPSD/carceler&Hamad LAB 1.psd" download class="download-btn">Download file</a>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="gallery-item">
+        <img src="projectsPSD/CARCELER&HAMAD LAB 2.png" alt="Carceler Lab 2" onerror="handleImageError(this)">
+        <div class="item-info">
+           <span>Carceler Future</span>
+           <a href="projectsPSD/CARCELER&HAMAD LAB 2.psd" download class="download-btn">Download file</a>
+        </div>
+      </div>
+
+       <!-- Item 4 -->
+      <div class="gallery-item">
+        <img src="projectsPSD/CARCELER&HAMAD LAB3.png" alt="Carceler Lab 3" onerror="handleImageError(this)">
+        <div class="item-info">
+           <span>Carceler Never Give Up </span>
+           <a href="projectsPSD/CARCELER&HAMAD LAB3.psd" download class="download-btn">Download file</a>
+        </div>
+      </div>
+
+       <!-- Item 5 -->
+      <div class="gallery-item">
+        <img src="projectsPSD/Mark&Reman-TextAround.png" alt="Carceler & Gabo Text Around" onerror="handleImageError(this)">
+        <div class="item-info">
+           <span>Carceler & Gabo Text Around</span>
+           <a href="projectsPSD/CARCELER&HAMMAD.psd" download class="download-btn">Download file</a>
+        </div>
+      </div>
+
+       <!-- Item 6 -->
+      <div class="gallery-item">
+        <img src="projectsPSD/Mark&Reman-Masking.png" alt="Mark & Reman Masking" onerror="handleImageError(this)">
+        <div class="item-info">
+           <span>Carceler&Gabo Masking Project</span>
+           <a href="projectsPSD/Mark&Reman-Masking.psd" download class="download-btn">Download file</a>
+        </div>
+      </div>
+
+       <!-- Item 7 -->
+      <div class="gallery-item">
+        <img src="projectsPSD/mark.png" alt="Carceler AcT1" onerror="handleImageError(this)">
+        <div class="item-info">
+           <span>Act 1</span>
+           <a href="projectsPSD/mark.psd" download class="download-btn">Download file</a>
+        </div>
+      </div>
+
+       <!-- Item 8 -->
+       <div class="gallery-item">
+        <img src="projectsPSD/saveasasfmwa.png" alt="Save As Project" onerror="handleImageError(this)">
+        <div class="item-info">
+           <span>Act 3</span>
+           <a href="projectsPSD/saveasasfmwa.psd" download class="download-btn">Download file</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Profile Modal -->
+<div id="profileModal" class="modal">
+  <div class="profile-modal-div">
+    <span class="close profile-close">&times;</span>
+    <img src="myPic.jpg" alt="Full Size Profile Picture">
+  </div>
 </div>
 
 <script src="personal.js"></script>
